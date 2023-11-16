@@ -1,0 +1,82 @@
+.color-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jacket-object{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.051);
+    margin-left: 32px;
+    margin-right: 32px;
+    height: 120px ;
+    margin-bottom: 16px;
+}
+
+.jacket-object div{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    
+}
+
+.jacket-object img{
+    height: 100px;
+    width: 70px;
+    margin-right: 20px;
+}
+
+.jacket-object div p{
+    margin-top: 0px;
+    margin-right: 16px;
+}
+
+#grand-price p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#grand-price{
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.payment-input{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+
+}
+
+#payment-option{
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#checkout-button-next a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#checkout-button-next a button{
+    width: 360px;
+    height: 56px;
+    background-color: #F9DC5C;
+    border-radius: 10px;
+    border-width: 0px;
+    margin-bottom: 32px;
+}
+
+#title{
+    margin-left: 32px;
+
+}

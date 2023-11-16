@@ -1,0 +1,22 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.jacket-category{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 16px;
+    margin-left: 32px;
+}
+
+.jacket-category img{
+    height: 300px;
+    width: 200px;
+
+}
+
+main h2, main h1{
+    margin-left: 16px;
+}

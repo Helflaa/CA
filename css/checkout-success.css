@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#checkmark-symbol{
+    width: 300px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+h1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 48px;
+}
+
+p, button{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+button{
+    width: 360px;
+    height: 56px;
+    background-color: #F9DC5C;
+    border-radius: 10px;
+    border-width: 0px;
+}

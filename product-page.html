@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Navn på side, forfatter, meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page </title>
+    <meta name="author" content="Helene">
+    <link rel="stylesheet" href="./css/product-page.css">
+
+    <!-- Lenker til skrifttyper fra google fonts og style sheets-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar på toppen av siden-->
+    <header class="header">
+        <div class="nav">
+            <input type="checkbox" id="menu-checkbox"/>
+            <label for="menu-checkbox" id="menu-label">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li>
+                    <a id="home" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a id="browse" href="browse.html">Browse</a>
+                </li>
+                <li>
+                    <a id="about" href="./about-us.html">About us</a>
+                </li>
+                <li>
+                    <a id="contact" href="./contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="logo-header">
+            <a href="index.html">
+                <img class="logo" alt="logo" src="./assets/rainydays-mountains.png" height="311" width="463"/>
+            </a>
+        </div>
+        <div class="shopping-cart">
+            <a href="./checkout.html" id="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+
+        <!-- Bilde av produkt, produktnavn og piler for å bla i bilder-->
+        <section id="product-container">
+            <h1>Patagonia Vision</h1>
+            <div id="image-selected">
+                <i class="fas fa-caret-left"></i>
+                <img src="./assets/jacket-7.jpg" alt="">
+                <i class="fas fa-caret-right"></i>
+            </div>
+
+            <!-- Lite bildegalleri under produktet-->   
+            <div id="image-carousel">
+                <img src="./assets/img-caro1.png" alt="">
+                <img src="./assets/img-caro2.png" alt="">
+                <img src="./assets/img-caro3.png" alt="">
+                <img src="./assets/img-caro4.png" alt="">
+                <img src="./assets/img-caro5.png" alt="">
+            </div>
+        </section>
+
+        <!-- valg av størrelse (xs, s, m, l, xl, xxl)-->
+        <section id="size">
+            <form action="">
+                <select name="" id="">
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                </select>
+            </form>
+        </section>
+
+        <!-- kjøp/checkout-knapp -->
+        <section id="buy-button">
+            <a href="./checkout.html">
+                <button>
+                    <h2>
+                        Buy now
+                    </h2>
+                </button>
+            </a>
+        </section>
+
+        <!-- Beskrivelse av produktet -->
+        <section id="product-description">
+            <p>
+                the pinnacle of outdoor apparel, designed to elevate your mountain adventures to new heights. Crafted for the modern explorer, this premium mountain jacket seamlessly fuses style and performance.
+
+                The "Patagonia Vision" boasts a cutting-edge construction, utilizing state-of-the-art materials that are both lightweight and incredibly durable. Its advanced waterproof and breathable membrane ensures you stay dry in even the harshest weather, while the innovative insulation technology keeps you warm without adding bulk.
+                
+                The jacket's sleek, ergonomic design not only provides a tailored fit but also allows for unrestricted movement, making it the perfect choice for demanding activities. Thoughtfully designed with a myriad of pockets and strategic ventilation, this jacket offers convenience and adaptability to all your adventures.
+                
+                Embodying Patagonia's commitment to sustainability, the "Vision" is made from eco-friendly materials, reducing its environmental footprint. Whether you're scaling peaks or simply embracing the outdoors, the "Patagonia Vision" jacket is the embodiment of high-performance, style, and eco-consciousness, redefining your mountain experience. Dare to dream, dare to explore, and dare to wear the "Patagonia Vision."
+            </p>
+        </section>
+
+        <!-- Anbefalte produkter (Vi tror du vil like...) -->
+        <section id="reccomended-jackets">
+            <h2>You may also like:</h2>
+            <section id="reccomended-display">
+                <div>
+                    <img src="./assets/jacket-1.jpg" alt="">
+                    <h3>Patagonia Vision</h3>
+                </div>
+                <div>
+                    <img src="./assets/jacket-2.jpg" alt="">
+                    <h3>Helly hansen W21</h3>
+                </div>
+                <div>
+                    <img src="./assets/jacket-3.jpg" alt="">
+                    <h3>Norrøna Higwaist m11</h3>
+                </div>
+                <div>
+                    <img src="./assets/jacket-4.jpg" alt="">
+                    <h3>Northwind Helix</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
+

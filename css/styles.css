@@ -1,0 +1,138 @@
+/*All styling i dette dokumentet gjelder for alle sider*/
+
+body{
+    margin: 0;
+    background-color: rgb(207, 233, 241);
+}
+
+
+/*Styling av overskrifter (h1, h2, h3) og brødtekst (p)*/
+h1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 48px;
+}
+h2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 36px;
+}
+h3{
+    font-family: 'Barlow', sans-serif;
+    font-size: 24px;
+}
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+}
+
+
+/*Styling av Navigasjonsbar på toppen av siden (alt under denne)*/
+main{
+    position: relative;
+    top: 80px;
+}
+
+#header-background {
+
+    width: 100vw;
+    height: 126px;
+    position: absolute;
+}
+
+.header {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    margin: 0 auto;
+    top: 0px;
+    height: 80px;
+    display: grid;
+    overflow: visible;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    'nav-menu       logo      shopping-cart';
+    background-color: #D4CBE5;;
+}
+
+.logo {
+    height: 100%;
+    max-height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    grid-area: nav-menu;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+.nav-menu {
+    display: none;
+}
+
+#logo-header {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-cart {
+    grid-area: shopping-cart;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-cart i {
+    font-size: 2.5rem;
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    padding: 0;
+    border-radius: 16px;
+    border: 2px solid white;
+    background-color: #D4CBE5;
+    height: 150px;
+    width: 100px;
+}
+
+#menu-label i {
+    font-size: 2.5rem;
+}
+
+#menu-checkbox:checked ~ .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 650px){
+p{
+        font-size: 1.5em;
+        margin-bottom: 8px;
+    }
+
+h2{
+    margin: auto;
+}
+
+}
+

@@ -1,0 +1,78 @@
+#login-body{
+    background-color: rgb(114, 174, 205);
+    display: flex;
+    flex-direction: column;
+}
+
+header div{
+    background-color: #D4CBE5;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-logo{
+    align-items: center;
+    align-self: center;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    margin-right: 32px;
+    margin-left: 32px;
+    gap: 8px;
+}
+
+#hero-logo{
+    width: 360px;
+}
+
+#login-button{
+    width: 360px;
+    height: 56px;
+    background-color: #F9DC5C;
+    border-radius: 10px;
+    border-width: 0px;
+}
+
+#login{
+    align-items: center;
+    align-self: center;
+}
+
+#login-alt{
+    border-top: 2px black;
+}
+
+#login-alt div{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+#login-alt, #login-alt-2{
+    align-items: center;
+    align-self: center;
+}
+
+#browsebutton-hard{
+    width: 360px;
+    height: 56px;
+    background-color: #F9DC5C;
+    border-radius: 10px;
+    border-width: 0px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#browsebutton-hard h2{
+    margin: auto;
+
+}

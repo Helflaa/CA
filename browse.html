@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Navn på side, forfatter, meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse</title>
+    <meta name="author" content="Helene">
+    <link rel="stylesheet" href="./css/browse.css">
+
+    <!-- Lenker til skrifttyper fra google fonts og style sheets-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation bar på toppen av siden-->
+    <header class="header">
+        <div class="nav">
+            <input type="checkbox" id="menu-checkbox"/>
+            <label for="menu-checkbox" id="menu-label">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li>
+                    <a id="home" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a id="browse" href="browse.html">Browse</a>
+                </li>
+                <li>
+                    <a id="about" href="./about-us.html">About us</a>
+                </li>
+                <li>
+                    <a id="contact" href="./contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="logo-header">
+            <a href="index.html">
+                <img class="logo" alt="logo" src="./assets/rainydays-mountains.png" height="311" width="463"/>
+            </a>
+        </div>
+        <div class="shopping-cart">
+            <a href="./checkout.html" id="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+     <!-- Produktgalleri - Alle jakkers-->
+    <main>
+        <h1>Browse</h1>
+        <h2>Popular</h2>
+
+    <!-- Øverste rad med jakker-->
+        <section id="first-selection" class="jacket-category">
+            
+            <div class="jacket" id="1-1">
+                <a href="./product-page.html"><img src="./assets/jacket-7.jpg" alt=""></a>
+                <h3>Patagonia Vision</h3>
+            </div>
+
+            <div class="jacket" id="1-2">
+                <img src="./assets/jacket-2.jpg" alt="">
+                <h3>Helly hansen W21</h3>
+            </div>
+
+            <div class="jacket" id="1-3">
+                <img src="./assets/jacket-3.jpg" alt="">
+                <h3>P.Finkelberg x300</h3>
+            </div>
+
+            <div class="jacket" id="1-4">
+                <img src="./assets/jacket-4.jpg" alt="">
+                <h3>Norrøna Higwaist m11</h3>
+            </div>
+
+            <div class="jacket" id="1-5">
+                <img src="./assets/jacket-5.jpg" alt="">
+                <h3>Northwind Helix</h3>
+            </div>
+            
+        </section>
+
+        <!-- Andre rad med jakker-->
+        <h2>On Sale</h2>
+        <section id="second-selection" class="jacket-category">
+            <div class="jacket" id="2-1">
+                <a href="./product-page.html"><img src="./assets/jacket-7.jpg" alt=""></a>
+                <h3>Patagonia Vision</h3>
+            </div>
+            <div class="jacket" id="2-2">
+                <img src="./assets/jacket-2.jpg" alt="">
+                <h3>Helly hansen W21</h3>
+            </div>
+            <div class="jacket" id="2-3">
+                <img src="./assets/jacket-3.jpg" alt="">
+                <h3>P.Finkelberg x300</h3>
+            </div>
+            <div class="jacket" id="2-4">
+                <img src="./assets/jacket-4.jpg" alt="">
+                <h3>Norrøna Higwaist m11</h3>
+            </div>
+            <div class="jacket" id="2-5">
+                <img src="./assets/jacket-5.jpg" alt="">
+                <h3>Northwind Helix</h3>
+            </div>
+        </section>
+
+         <!-- Tredje rad med jakker-->
+        <h2>Fresh now!</h2>
+        <section id="second-selection" class="jacket-category">
+            <div class="jacket" id="3-1">
+                <a href="./product-page.html"><img src="./assets/jacket-7.jpg" alt=""></a>
+                <h3>Patagonia Vision</h3>
+            </div>
+            <div class="jacket" id="3-2">
+                <img src="./assets/jacket-2.jpg" alt="">
+                <h3>Helly hansen W21</h3>
+            </div>
+            <div class="jacket" id="3-3">
+                <img src="./assets/jacket-3.jpg" alt="">
+                <h3>P.Finkelberg x300</h3>
+            </div>
+            <div class="jacket" id="3-4">
+                <img src="./assets/jacket-4.jpg" alt="">
+                <h3>Norrøna Higwaist m11</h3>
+            </div>
+            <div class="jacket" id="3-5">
+                <img src="./assets/jacket-5.jpg" alt="">
+                <h3>Northwind Helix</h3>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

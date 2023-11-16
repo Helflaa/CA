@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Navn på side, forfatter, meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <meta name="author" content="Helene">
+    <link rel="stylesheet" href="./css/checkout.css">
+
+
+    <!-- Lenker til skrifttyper fra google fonts og style sheets-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation bar på toppen av siden-->
+    <header class="header">
+        <div class="nav">
+            <input type="checkbox" id="menu-checkbox"/>
+            <label for="menu-checkbox" id="menu-label">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li>
+                    <a id="home" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a id="browse" href="browse.html">Browse</a>
+                </li>
+                <li>
+                    <a id="about" href="./about-us.html">About us</a>
+                </li>
+                <li>
+                    <a id="contact" href="./contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="logo-header">
+            <a href="index.html">
+                <img class="logo" alt="logo" src="./assets/rainydays-mountains.png" height="311" width="463"/>
+            </a>
+        </div>
+        <div class="shopping-cart">
+            <a href="./checkout.html" id="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <h1 id="title">Checkout</h1>
+        <section id="jackets-in-cart">
+
+            <!-- Jakke nummer 1 i handlevogn -->
+            <article class="jacket-object">
+                <img src="./assets/jacket-1.jpg" alt="A red jacket">
+                <div>
+                    <p>Patagonia ace</p>
+                    <p>Size: XL</p>
+                    <p class="color-price">Orange/Grey <span>$39.99</span></p>
+                </div>
+            </article>
+
+            <!-- Jakke nummer 2 i handlevogn -->
+            <article class="jacket-object">
+                <img src="./assets/jacket-2.jpg" alt="A red jacket">
+                <div>
+                    <p>Helly Hansen O2</p>
+                    <p>Size: M</p>
+                    <p class="color-price">Grey <span>$19.99</span></p>
+                </div>
+            </article>
+
+            <!-- Jakke nummer 3 i handlevogn -->
+            <article class="jacket-object">
+                <img src="./assets/jacket-3.jpg" alt="A red jacket">
+                <div>
+                    <p>Norrøna Champ</p>
+                    <p>Size: XL</p>
+                    <p class="color-price">Red <span>$45.99</span></p>
+                </div>
+            </article>
+        </section>
+        <hr>
+
+        <!-- Pris for hvert produkt og sammenlagt -->
+        <section id="grand-price">
+            <p>Patagonia Ace<span>$39.99</span></p>
+            <p>Helly Hansen O2 <span>$19.99</span></p>
+            <p>Norrøna Champ <span>$45.99</span></p>
+            <p>Total price <span>105.97</span></p>
+        </section>
+        <hr>
+
+        <!-- Valg av betalingsmetode: Vipps, Visa, Paypal -->
+        <section>
+            <form action="" id="payment-option">
+                
+                <h2>Chose your payment method</h2>
+
+                <div id="visa-input" class="payment-input">
+                    <input type="radio" name="visa" id="visa">
+                    <img src="./assets/Visa.png"
+                    height="32px"
+                    width="32px"
+                    alt="">
+                    <p>Visa</p>
+                </div>
+                <div id="vipps-input" class="payment-input">
+                    <input type="radio" name="vipps" id="vipps">
+                    <img src="./assets/Vipps.png"
+                    height="32px"
+                    width="32px"
+                    alt="">
+                    <p>Vipps</p>
+                </div>
+                <div id="paypal-input" class="payment-input">
+                    <input type="radio" name="PayPal" id="PayPal">
+                    <img src="./assets/PayPal.png"
+                    height="32px"
+                    width="32px"
+                    alt="">
+                    <p>PayPal</p>
+
+                </div>
+
+
+            </form>
+        </section>
+        <hr>
+        <!-- Knapp for å gå videre -->
+             <div id="checkout-button-next">
+                <a href="./checkout-success.html">
+                    <button>
+                        <h2>Proceed</h2>
+                    </button>
+                </a>
+             </div>
+
+    </main>
+</body>
+</html>
